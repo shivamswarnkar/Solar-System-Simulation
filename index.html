@@ -3,35 +3,37 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Solar System Simulation</title>
+    <title>Unity WebGL Player | Solar System Simulation</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
     <script src="TemplateData/UnityProgress.js"></script>
-    <style>
+
+    <style type="text/css">
+      body{
+        background-color: black;
+      }
       footer{
+        font-style: italic;
+        font-family: "Arial";
+        color: white;
         position: absolute;
         bottom: 0px;
-        color:white;
-        background-color: purple;
-        text-align:right;
         width: 100%;
-        font-size: 1.5em;
-        font-style: italic;
-        font-family: "Times New Roman";
-        font-weight: 900;
-
+        text-align: left;
       }
       a{
-        color:white;
         text-decoration: none;
+        color: skyblue;
       }
-      #name{
+      a:hover{
+        text-decoration: underline;
         color: yellow;
       }
+
     </style>
   </head>
   <body class="template">
-    <p class="header"><span>Unity WebGL Player</span>Solar System Simulation</p>
+    <p class="header"><span>Unity WebGL Player | </span>Solar System Simulation</p>
     <div class="template-wrap clear">
       <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
       <br>
@@ -39,15 +41,18 @@
       <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
       <div class="title">Solar System Simulation</div>
     </div>
-    <footer>&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com" target="_blank">Unity</a>  by <a href="https://shivamswarnkar.github.io" target="_blank"  title="Know more about Shivam" id="name">Shivam Swarnkar</a> </a> &raquo;</footer>
+    <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+    <footer>
+      <span id="name">Created By <a href="https://shivamswarnkar.github.io" title="Know more about Shivam" target="_blank"> Shivam Swarnkar</a></span>
+    </footer> 
     <script type='text/javascript'>
   var Module = {
     TOTAL_MEMORY: 268435456,
     errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
     compatibilitycheck: null,
-    dataUrl: "Release/Project1.data",
-    codeUrl: "Release/Project1.js",
-    memUrl: "Release/Project1.mem",
+    dataUrl: "Release/gh-pages.data",
+    codeUrl: "Release/gh-pages.js",
+    memUrl: "Release/gh-pages.mem",
     
   };
 </script>
